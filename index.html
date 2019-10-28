@@ -2,15 +2,89 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>iStreamer</title>
+    <style>
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 200;
+        src: local('Source Sans Pro ExtraLight'), local('SourceSansPro-ExtraLight'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3i94_wlxdr.ttf) format('truetype');
+        }
+        @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 300;
+        src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf) format('truetype');
+        }
+        * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-weight: 300;
+        }
+        body {
+        font-family: 'Source Sans Pro', sans-serif;
+        background-color: #f2f2f2;
+        }
+      #root {
+        text-align: center;
+        margin-top: 12%;
+      }
+      .header-qu {
+        font-size: 30px;
+      }
+      .simple-grid {
+        clear: both;
+        top: 50%;
+        margin-top: 50px;
+      }
+      .simple-grid .music {
+        display: inline;
+        padding: 10px;
+        padding-top: 80px;
+        border-radius: 15px;
+        cursor: pointer;
+        background-color: white;
+        font-size: 30px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      .simple-grid .video {
+        display: inline;
+        padding: 10px;
+        margin-left: 130px;
+        padding-top: 80px;
+        border-radius: 15px;
+        cursor: pointer;
+        background-color: white;
+        font-size: 30px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      .simple-grid .video:hover {
+        border-radius: 0px;
+      }
+      .simple-grid .music:hover {
+        border-radius: 0px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
-
-    <!-- You can also require other files to run in this process -->
+    <div id="root">
+        <!-- First Window That Gets Data Type That User Wants Stream  -->    
+        <div>
+          <img src="src/assets/logo.png" width="200" height="200"/>
+          <br />
+          <br />
+          <p class="header-qu">Please Choose The Type Of File You Want's Stream</p>
+            <div class="simple-grid">
+              <div class="music">
+                 <img src="src/assets/music-icon.png" width="100"  /><span>Music</span>
+              </div>
+              <div class="video">
+                  <img src="src/assets/video-icon.png" width="100" /><span>Video</span>
+              </div>
+            </div>
+        </div>
+    </div>
     <script src="./renderer.js"></script>
   </body>
 </html>
