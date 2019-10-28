@@ -1,0 +1,21 @@
+{
+  "name": "iStreamer",
+  "version": "0.0.1",
+  "description": "📽️ Super Minimal App For All OS That Get A Link And Stream It For You",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/E-RROR/iStreamer",
+  "keywords": [
+    "stream",
+    "video",
+    "music",
+    "sina farhadi"
+  ],
+  "author": "Sina Farhadi",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^7.0.0"
+  }
+}
