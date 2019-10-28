@@ -26,45 +26,49 @@
         font-family: 'Source Sans Pro', sans-serif;
         background-color: #f2f2f2;
         }
-      #root {
-        text-align: center;
-        margin-top: 12%;
-      }
-      .header-qu {
-        font-size: 30px;
-      }
-      .simple-grid {
-        clear: both;
-        top: 50%;
-        margin-top: 50px;
-      }
-      .simple-grid .music {
-        display: inline;
-        padding: 10px;
-        padding-top: 80px;
-        border-radius: 15px;
-        cursor: pointer;
-        background-color: white;
-        font-size: 30px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      }
-      .simple-grid .video {
-        display: inline;
-        padding: 10px;
-        margin-left: 130px;
-        padding-top: 80px;
-        border-radius: 15px;
-        cursor: pointer;
-        background-color: white;
-        font-size: 30px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      }
-      .simple-grid .video:hover {
-        border-radius: 0px;
-      }
-      .simple-grid .music:hover {
-        border-radius: 0px;
-      }
+        a {
+          text-decoration: black;
+          color: black;
+        } 
+        #root {
+          text-align: center;
+          margin-top: 12%;
+        }
+        .header-qu {
+          font-size: 30px;
+        }
+        .simple-grid {
+          clear: both;
+          top: 50%;
+          margin-top: 50px;
+        }
+        .simple-grid .music {
+          display: inline;
+          padding: 10px;
+          padding-top: 0px;
+          border-radius: 15px;
+          cursor: pointer;
+          background-color: white;
+          font-size: 30px;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .simple-grid .video {
+          display: inline;
+          padding: 10px;
+          margin-left: 130px;
+          padding-top: 0px;
+          border-radius: 15px;
+          cursor: pointer;
+          background-color: white;
+          font-size: 30px;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .simple-grid .video:hover {
+          padding-top: 80px;
+        }
+        .simple-grid .music:hover {
+          padding-top: 80px;
+        }
     </style>
   </head>
   <body>
@@ -76,12 +80,16 @@
           <br />
           <p class="header-qu">Please Choose The Type Of File You Want's Stream</p>
             <div class="simple-grid">
-              <div class="music">
-                 <img src="src/assets/music-icon.png" width="100"  /><span>Music</span>
-              </div>
-              <div class="video">
+              <a href="src/pages/music.html">
+                <div class="music">
+                  <img src="src/assets/music-icon.png" width="100"  /><span>Music</span>
+                </div>
+              </a>
+              <a href="src/pages/video.html">
+                <div class="video">
                   <img src="src/assets/video-icon.png" width="100" /><span>Video</span>
-              </div>
+                </div>
+              </a>
             </div>
         </div>
     </div>
