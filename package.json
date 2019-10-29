@@ -1,12 +1,12 @@
 {
-  "name": "iStreamer",
+  "name": "iStream",
   "version": "0.0.1",
   "description": "📽️ Super Minimal App For All OS That Get A Link And Stream It For You",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/E-RROR/iStreamer",
+  "repository": "https://github.com/E-RROR/iStream",
   "keywords": [
     "stream",
     "video",
@@ -17,5 +17,8 @@
   "license": "MIT",
   "devDependencies": {
     "electron": "^7.0.0"
+  },
+  "dependencies": {
+    "electron-installer-dmg": "^3.0.0"
   }
 }
