@@ -402,9 +402,30 @@
         .streambtn:hover {
             background-color: rgb(6, 163, 153);
         }
+        .foatbtn {
+            position: absolute;
+            margin-left: 50px;
+            margin-top: 50px;
+            font-size: 20px;
+            top: 0;
+            background-color: rgba(5, 204, 190, 1);
+            border-radius: 10px;
+            padding: 10px;
+            color: white;
+            z-index: 10;
+        }
+        .foatbtn a {
+            text-decoration: white;
+        }
+        .foatbtn:hover {
+            background-color: rgb(6, 163, 153);
+        }
     </style>
   </head>
   <body>
+      <a href="../../index.html"><p class="foatbtn">
+          Back
+      </p></a>
        <div id="getlink">
            <img src="../assets/music-icon.png" width="200"/>
            <br />
@@ -440,18 +461,8 @@
                             </div>
                             <div id="player-controls">
                                 <div class="control">
-                                    <div class="button" id="play-previous">
-                                        <i class="fas fa-backward"></i>
-                                    </div>
-                                </div>
-                                <div class="control">
                                     <div class="button" id="play-pause-button">
                                         <i class="fas fa-play"></i>
-                                    </div>
-                                </div>
-                                <div class="control">
-                                    <div class="button" id="play-next">
-                                        <i class="fas fa-forward"></i>
                                     </div>
                                 </div>
                             </div>
