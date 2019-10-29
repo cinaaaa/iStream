@@ -392,12 +392,12 @@
 
         .button:hover
         {
-            background-color: #d6d6de;
+            color: rgb(6, 223, 208);
         }
 
         .button:hover i
         {
-            color: #fff;
+            color: rgb(6, 223, 208);
         }
         .streambtn:hover {
             background-color: rgb(6, 163, 153);
@@ -463,7 +463,6 @@
         let musicSRC;
         function init()
             {
-            alert('start')
             var playerTrack = $("#player-track"), bgArtwork = $('#bg-artwork'), bgArtworkUrl, albumName = $('#album-name'), trackName = $('#track-name'), albumArt = $('#album-art'), sArea = $('#s-area'), seekBar = $('#seek-bar'), trackTime = $('#track-time'), insTime = $('#ins-time'), sHover = $('#s-hover'), playPauseButton = $("#play-pause-button"),  i = playPauseButton.find('i'), tProgress = $('#current-time'), tTime = $('#track-length'), seekT, seekLoc, seekBarPos, cM, ctMinutes, ctSeconds, curMinutes, curSeconds, durMinutes, durSeconds, playProgress, bTime, nTime = 0, buffInterval = null, tFlag = false, albums = ['iStream'], trackNames = ['sound is playing'], albumArtworks = ['_1'], trackUrl = [musicSRC], playPreviousTrackButton = $('#play-previous'), playNextTrackButton = $('#play-next'), currIndex = -1;
 
             function playPause()
@@ -700,7 +699,6 @@
             document.getElementById("getlink").style.display = "none";
             document.getElementById("streamer").style.display = "block";
             musicSRC = musicSRCs
-            alert(musicSRC)
             init()
             }else {
             alert('invalid Link')
