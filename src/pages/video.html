@@ -68,11 +68,32 @@
         #streamer {
             text-align: center;
         }
+        .foatbtn {
+            position: absolute;
+            margin-left: 50px;
+            margin-top: 50px;
+            font-size: 20px;
+            top: 0;
+            background-color: rgba(5, 204, 190, 1);
+            border-radius: 10px;
+            padding: 10px;
+            color: white;
+            z-index: 10;
+        }
+        .foatbtn a {
+            text-decoration: white;
+        }
+        .foatbtn:hover {
+            background-color: rgb(6, 163, 153);
+        }
     </style>
     <link href="https://unpkg.com/video.js/dist/video-js.min.css" rel="stylesheet">
     <script src="https://unpkg.com/video.js/dist/video.min.js"></script>
   </head>
   <body>
+        <a href="../../index.html"><p class="foatbtn">
+                Back
+        </p></a>
         <script>window.HELP_IMPROVE_VIDEOJS = false;</script>
        <div id="getlink">
            <img src="../assets/video-icon.png" width="200"/>
